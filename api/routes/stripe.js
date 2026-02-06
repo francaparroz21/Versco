@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express from "express";
 import Stripe from "stripe";
 
@@ -16,7 +17,7 @@ router.post("/payment", async (req, res) => {
 
     res.status(200).json(charge);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(500).json(err);w
   }
 });
 
